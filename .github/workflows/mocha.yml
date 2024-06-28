@@ -11,16 +11,6 @@ on:
       environment:
         required: true
         type: string
-  workflow_dispatch:
-    inputs:
-      environment:
-        description: Which environment to run the E2E suite against
-        required: false
-        default: prod
-        type: choice
-        options:
-          - qa-env-example
-          - preprod-env-example
 
 jobs:
   RUN-SuperTest-API-Test:
