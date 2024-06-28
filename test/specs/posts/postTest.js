@@ -1,4 +1,4 @@
-import { post, put, remove } from "../../utils/api.js";
+import { post } from "../../utils/api.js";
 import { newPost } from "../../dto/newPost.js";
 import { newUser } from "../../dto/newUser.js";
 import { expect } from "chai";

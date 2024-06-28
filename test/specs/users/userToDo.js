@@ -1,4 +1,4 @@
-import { get, post, put, remove } from "../../utils/api.js";
+import { get, post, remove } from "../../utils/api.js";
 import { newUser } from "../../dto/newUser.js";
 import { expect } from "chai";
 import { HTTP_STATUS_CODE } from "../../utils/httpConstants.js";
