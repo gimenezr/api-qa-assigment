@@ -1,10 +1,31 @@
 name: RUN SuperTest API Test CI
 
+# on:
+#   push:
+#     branches: ["main"]
+#   pull_request:
+#     branches: ["main"]
+
 on:
-  push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]
+  workflow_call:
+    inputs:
+      environment:
+        required: true
+        type: string
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Which environment to run the E2E suite against
+        required: true
+        default: qa
+        type: choice
+        options:
+          - preproduction
+          - qa
+      release-url:
+        description: The release of the deployment triggering the workflow run
+        required: false
+        type: string
 
 jobs:
   RUN-SuperTest-API-Test:
