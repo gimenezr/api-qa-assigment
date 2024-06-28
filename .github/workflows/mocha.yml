@@ -37,10 +37,10 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: SuperTest-mochawesome-test-report
-        path: Report
+        path: mochawesome-report
 
     - name: Upload SuperTest mochawesome report to GitHub
       uses: actions/upload-artifact@v3
       with:
         name: SuperTest-mochawesome-test-report
-        path: Report
+        path: mochawesome-report
