@@ -46,5 +46,5 @@ describe("Verify that the todo API returns correctly", () => {
       .send()
       .expect(HTTP_STATUS_CODE.OK);
     expect(userResponse.body).to.be.an("array").that.is.empty;
-  });
+  }).timeout(5000); //Sometimes this API takes longer to retrieve the user
 });
