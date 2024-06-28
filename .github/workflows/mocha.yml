@@ -31,7 +31,7 @@ jobs:
       run: npm ci
 
     - name: RUN SuperTest API Testing
-      run: npm test
+      run: npm test-report
       
     - name: Archive SuperTest mochawesome test report
       uses: actions/upload-artifact@v3

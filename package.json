@@ -7,7 +7,7 @@
   "scripts": {
     "test-local": "mocha test/specs/**/*.js && mocha --reporter json > reports/test-results.json",
     "test": "mocha test/specs/**/*.js && mocha --reporter json > reports/test-results.json",
-    "test-report": "mocha test/specs/**/*.js && mocha --reporter json > reports/test-results.json && mocha --reporter mochawesome"
+    "test-report": "mocha test/specs/**/*.js --reporter mochawesome"
   },
   "keywords": [],
   "author": "",
