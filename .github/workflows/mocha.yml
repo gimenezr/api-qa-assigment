@@ -11,6 +11,10 @@ on:
       environment:
         required: true
         type: string
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Run the test cases on demand
 
 jobs:
   RUN-SuperTest-API-Test:
