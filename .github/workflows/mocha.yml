@@ -1,10 +1,10 @@
 name: RUN SuperTest API Test CI
 
-# on:
-#   push:
-#     branches: ["main"]
-#   pull_request:
-#     branches: ["main"]
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
 
 on:
   workflow_call:
@@ -16,8 +16,8 @@ on:
     inputs:
       environment:
         description: Which environment to run the E2E suite against
-        required: true
-        default: qa
+        required: false
+        default: prod
         type: choice
         options:
           - preproduction
