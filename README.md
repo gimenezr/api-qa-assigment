@@ -9,8 +9,8 @@ npm ci
 
 ## Running Tests and Viewing Reports
 
-- To run the tests locally, you need to set up an .env.local file with the `BASE_URL` and `TOKEN` parameters. Refer to `.env` for an example.
-    - Running Tests Locally: `npm test`
+- To run the tests locally, you need to set up an `.env.local` file with the `BASE_URL` and `TOKEN` parameters. Refer to `.env` for an example.
+    - Running Tests Locally: `npm run test`
     - Running Tests and Generating Reports: `npm run test-report`
         - o view the report locally, navigate to the repository folder, locate the `mochawesome-report` directory, and open the .html file.
 
