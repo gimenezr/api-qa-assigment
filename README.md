@@ -24,3 +24,4 @@ Automated testing is set up using GitHub Actions for continuous integration:
 4. Wait for the workflow to complete.
 5. To view the generated report: Go to the finished job. Scroll down and access the attached report.
 
+![alt text](image.png)
